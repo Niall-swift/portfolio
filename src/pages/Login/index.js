@@ -28,11 +28,7 @@ export default function Login(){
           </video>
         </VideoBackground>
         <Avatar onClick={Sing}>
-<<<<<<< HEAD
           <img src={avatar} alt="foto de josué"/>
-=======
-          <img src="https://avatars.githubusercontent.com/u/108350617?v=4" alt="foto de josué"/>
->>>>>>> eacccb5b7c0b33d9a33fa6cec2708c2b5b9c5ede
         </Avatar>
         <h1>Josué Ramos</h1>
     </Conteiner>
