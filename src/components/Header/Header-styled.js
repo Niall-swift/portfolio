@@ -28,7 +28,7 @@ export const Options = styled.div`
     a{
       margin-left: 2rem;
       margin-right: 3rem;
-      padding: 1em;
+      padding: 0.7rem;
       cursor: pointer;
       border-radius: 5px;
       color: #fff;
@@ -37,16 +37,16 @@ export const Options = styled.div`
       text-decoration: none;
 
       &:hover{
-        background: #222831;
-        box-shadow: 0 0 10px 1px #222831;
+        background: #696969;
+        box-shadow: 0 0 10px 1px #696969;
         animation: Hover 600ms ease-in-out;
       }
       @keyframes Hover {
         0%{
-          box-shadow: 0 0 15px 5px #222831;
+          box-shadow: 0 0 15px 5px #696969;
         }
         100%{
-          box-shadow: 0 0 10px 1px #222836;
+          box-shadow: 0 0 10px 1px #696969;
         }
       }
     }
