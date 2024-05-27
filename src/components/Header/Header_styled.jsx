@@ -3,19 +3,23 @@ import styled from "styled-components";
 
 export const Conteiner = styled.header`
   width: 100%;
-  height: 15%;
+  height: 10%;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 0.5em;
-  position: fixed;
-  z-index: 99;
+  position: absolute;
+  z-index: 9;
   top: 0;
   background: transparent;
   backdrop-filter: blur(12px);
-  background: rgba(16 18 27 / 40%);
+  background: #00000064;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 `
-
+export const ButtonMenu = styled.button`
+  position: absolute;
+  left: 50px;
+`
 export const Options = styled.div`
   height: 80%;
   display: flex;

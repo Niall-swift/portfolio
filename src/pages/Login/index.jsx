@@ -1,4 +1,4 @@
-import { Conteiner, VideoBackground, Avatar } from "./Login-styled"
+import { Conteiner, VideoBackground, Avatar } from "./Login_Style"
 import video from '../../assets/Dynamic Background.mp4'
 import login from '../../sons/xbox-series-sign-on.mp3'
 import sing from '../../sons/xbox-series-return-to-xmb.mp3'

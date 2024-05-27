@@ -6,9 +6,6 @@ export const Conteiner = styled.section`
   height: 100vh;
   margin: 0 auto;
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-image: url(${avatar});
   background-position: center;
   background-repeat: no-repeat;
@@ -22,14 +19,65 @@ export const Iform = styled.main`
   justify-content: center;
   justify-content: space-around;
   align-items: center;
-  backdrop-filter: blur(12px);
+  backdrop-filter: blur(20px);
   background: rgba(16 18 27 / 70%);
+  
+  @media screen and (max-width: 600px){
+    display: flex;
+    flex-direction: column;
+  }
 
   >div{
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
     padding: 2rem;
-    width: 500px;
+    width: 100%;
+  }
+`
+export const Redes = styled.div`
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 2rem;
+  
+  button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    border-radius: 10px;
+
+    svg{
+      padding: 5px;
+      background: #696969;
+      border-radius: 5px;
+    }
+
+    &:hover{
+        box-shadow: 0 0 10px 1px #696969;
+        animation: Hover 600ms ease-in-out;
+        border:  2px solid  #696969;
+      }
+      @keyframes Hover {
+        0%{
+          box-shadow: 0 0 15px 5px #696969;
+        }
+        100%{
+          box-shadow: 0 0 10px 1px #696969;
+        }
+      }
+  }
+  button:nth-child(n+2){
+    margin-left: 5em;
   }
 `
 
