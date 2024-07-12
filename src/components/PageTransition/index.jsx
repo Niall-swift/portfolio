@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { transition } from "../../utils/Animations";
-import './PageTransition.css'
 
 export const PageTransition = () => (
   <>
@@ -10,10 +9,9 @@ export const PageTransition = () => (
         scaleY: 0,
       }}
       exit={{ scaleY: 1 }}
-      transition={{ ...transition, duration: 1.5}}
-      className="Transition"
+      transition={{ ...transition, duration: 1}}
+      className="fixed top-0 left-0 w-full h-screen origin-bottom bg-Xbox-SbBlack z-50"
     >
-      <h1 className="Name">JRDS</h1>
     </motion.div>
 
     <motion.div
@@ -21,11 +19,10 @@ export const PageTransition = () => (
       animate={{
         scaleY: 0,
       }}
-      exit={{ scaleY: 0 }}
-      transition={{ ...transition, duration: 1.5, delay: 1 }}
-      className="Transition"
+      exit={{ scaleY : 0 }}
+      transition={{ ...transition, duration: 1}}
+      className="fixed top-0 left-0 w-full h-screen origin-top bg-Xbox-SbBlack z-50 "
     >
-      <h1 className="Name">JRDS</h1>
     </motion.div>
 
   </>

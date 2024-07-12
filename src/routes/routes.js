@@ -1,6 +1,6 @@
 import { Route, Routes, useLocation } from "react-router-dom";
 import Login from "../pages/Login";
-import Dashboadr from "../pages/Dashboadr";
+import { Dashboadr } from "../pages/Dashboadr";
 import { AnimatePresence } from "framer-motion";
 
 
