@@ -11,18 +11,18 @@ export function Dashboadr() {
     <>
       <PageTransition />
 
-      <section className="container relative z-20 mx-auto w-full overflow-hidden sm:mt-4">
+      <section className="container relative z-20 mx-auto w-full h-full overflow-hidden sm:mt-4">
         <motion.div
           {...fadeInUp}
           transition={{ ...fadeInUp.transition, delay: 0.2 }}
           className="mx-auto grid items-center gap-4 p-8 sm:grid-cols-3 xl:gap-14 "
         >
           <div className="flex flex-col gap-6">
-            <h1 className="text-center font-Wulkan text-4xl font-medium uppercase text-darkBrown sm:text-left lg:text-5xl">
-              Dev <br className="hidden sm:block" /> Front-End
+            <h1 className="text-center font-Wulkan text-4xl font-medium uppercase  text-Xbox-Purple sm:text-left lg:text-5xl">
+              Dev <br className="hidden sm:block" /> <p className="text-black">Front-End</p>
             </h1>
 
-            <p className="text-sm lg:text-base">
+            <p className="text-xl xl:text-base">
               Olá, eu me chamo Josué, seja bem-vindo(a) ao meu Portfólio.
               Logo abaixo você encontra algumas das minhas redes, sinta-se
               à vontade de entrar em contato! =)
@@ -30,34 +30,40 @@ export function Dashboadr() {
             {/* Redes sociais */}
             <div className="flex justify-center gap-10 pb-4 text-3xl sm:justify-start sm:pt-6">
               <a
+                target="_blank"
+                rel="noreferrer noopener"
                 href="https://www.instagram.com/niall_swift_/"
-                className="transition hover:text-accent"
+                className="transition hover:text-Xbox-Purple"
               >
                 <BsInstagram />
               </a>
               <a
+                target="_blank"
+                rel="noreferrer noopener"
                 href="https://www.linkedin.com/in/josué-ramos-dev"
-                className="transition hover:text-accent"
+                className="transition hover:text-Xbox-Purple"
               >
                 <FaLinkedinIn />
               </a>
               <a
+                target="_blank"
+                rel="noreferrer noopener"
                 href="https://github.com/Niall-swift"
-                className="transition hover:text-accent"
+                className="transition hover:text-Xbox-Purple"
               >
                 <BsGithub />
               </a>
             </div>
           </div>
 
-          <div className="mx-auto h-[90%] w-[90%] overflow-hidden rounded-full">
+          <div className="mx-auto w-[90%] shadow-2xl shadow-Xbox-roxo/20 overflow-hidden rounded-full">
             <motion.img
               whileHover={{ scale: 1.1 }}
               initial={{ scale: 1.15 }}
               animate={{ scale: 1 }}
               transition={{ ...transition, duration: 1.45, delay: 0.7 }}
               src={picture}
-              className="mx-auto w-full "
+              className="mx-auto w-full"
             />
           </div>
           <div className="relative h-2/3 ">
@@ -67,20 +73,16 @@ export function Dashboadr() {
 
             <Link
               to="/projects"
-              className="absolute -bottom-4 left-6 hidden h-32 w-32 items-center justify-center rounded-full border border-darkBrown sm:flex lg:left-14 lg:h-40 lg:w-40 xl:bottom-0"
+              className="absolute -bottom-4 left-6 hidden h-32 w-32 items-center justify-center rounded-full border border-Xbox-Sinza sm:flex lg:left-14 lg:h-40 lg:w-40 xl:bottom-0  hover:scale-105 transition duration-300"
             >
-              <div className="absolute top-2 right-1 h-6 w-6 rounded-full bg-accent lg:top-1 lg:right-5"></div>
+              <div className="absolute top-2 right-1 h-6 w-6 rounded-full group-hover:animate-pulse transition bg-Xbox-Purple lg:top-1 lg:right-5"></div>
               <p className="w-20">Ver meus Projetos</p>
               <BsArrowUpRight className="h-5 w-5" />
             </Link>
+
           </div>
         </motion.div>
-        <motion.div
-          {...fadeInDown}
-          transition={{ ...fadeInDown.transition, duration: 1.25 }}
-          className="flex w-full justify-center gap-6 py-12 sm:gap-20 sm:p-6"
-        >
-        </motion.div>
+
       </section>
 
       {/* Efeitos em volta do site */}
