@@ -1,125 +1,106 @@
 import { Link } from "react-router-dom";
-import { Dialog } from "@headlessui/react";
-import { AnimatePresence, motion } from "framer-motion";
-
-import { MdOpenInNew } from "react-icons";
-import { fadeIn, fadeInDown, scaleUp } from "../../utils/Animations";
-import { StaggerContainer, itemAnimation } from "../../utils/Animations";
-
-
+import { Dialog, DialogPanel, DialogTitle,Description} from '@headlessui/react'
+import { motion , AnimatePresence} from "framer-motion";
+import { fadeIn, fadeInDown, scaleUp, itemAnimation} from "../../utils/Animations";
+import { IoCloudDownloadOutline } from "react-icons/io5";
 
 export const MenuModal = ({ isOpen, setIsOpen }) => {
 
   return (
-    <AnimatePresence>
-      {isOpen && (
-        <Dialog
-          static
-          open={isOpen}
-          onClose={() => setIsOpen(false)}
-          className="relative z-30"
+    <>
+      <Dialog open={isOpen} onClose={() => setIsOpen(false)} className="relative z-50">
+
+        <motion.div
+        {...fadeIn}
+        transition={{ duration: 0.7 }}
+        className="fixed inset-0 flex w-screen items-center justify-center p-4 bg-Xbox-SbBlack/30 backdrop-blur-sm"
         >
-          {/* The backdrop, rendered as a fixed sibling to the panel StaggerContainer */}
-          <motion.div
-            {...fadeIn}
-            transition={{ duration: 0.7 }}
-            className="fixed inset-0 bg-darkBrown/30 dark:bg-lightBrown/30 backdrop-blur-sm"
-            aria-hidden="true"
-          />
+          <DialogPanel className="relative mx-auto flex h-[32rem] w-[90%] flex-col items-center overflow-hidden rounded-2xl bg-white p-4">
+            <DialogTitle
+            as={motion.h1}
+            {...fadeInDown}
+            transition={{ ...fadeInDown.transition, duration: 0.8, delay: 0.5 }}
+            className="font-Odasans text-5xl font-semibold text-Xbox-Purple"
+            >
+            JRDS
+            </DialogTitle>
+            <div className="mt-8 flex w-full flex-col items-center gap-2 font-medium">
 
-          {/* Full-screen scrollable StaggerContainer */}
-          <div className="fixed inset-0 overflow-y-auto">
-            {/* StaggerContainer to center the panel */}
-            <div className="flex min-h-full items-center justify-center p-4">
-              {/* The actual dialog panel  */}
-              <Dialog.Panel
-                as={motion.div}
-                {...scaleUp}
-                className="relative mx-auto flex h-[32rem] w-[90%] flex-col items-center overflow-hidden rounded-2xl bg-whity dark:bg-darky p-4"
-              >
-                <Dialog.Title
-                  as={motion.h1}
-                  {...fadeInDown}
-                  transition={{ ...fadeInDown.transition, duration: 0.8, delay: 0.5 }}
-                  className="font-Odasans text-5xl font-semibold text-accent dark:text-darkAccent"
-                >
-                  JRDS
-                </Dialog.Title>
-
-                <motion.div
-                  variants={StaggerContainer}
-                  initial="hidden"
-                  animate="show"
-                  exit="exit"
-                  className="mt-8 flex w-full flex-col items-center gap-2 font-medium"
-                >
-                  <motion.div
-                    variants={itemAnimation}
-                    className="w-full rounded-lg bg-accent/40 dark:bg-darkAccent/40 p-3"
+            <motion.div
+                    {...fadeInDown}
+                    transition={{ ...fadeInDown.transition, duration: 0.8, delay: 0.6 }}
+                    className="w-full rounded-lg bg-Xbox-Purple/50 p-3"
                   >
                     <Link
                       to="/"
-                      className="bottomLine w-full"
+                      className="bottomLine w-full text-white"
                       onClick={() => setIsOpen(false)}
                     >
                       Home
                     </Link>
                   </motion.div>
+
                   <motion.div
-                    variants={itemAnimation}
-                    className="w-full rounded-lg bg-accent/40 dark:bg-darkAccent/40 p-3"
+                    {...fadeInDown}
+                    transition={{ ...fadeInDown.transition, duration: 0.8, delay: 0.7 }}
+                    className="w-full rounded-lg bg-Xbox-Purple/50 p-3"
                   >
                     <Link
-                      to="about"
-                      className="bottomLine w-full"
+                      to="/about"
+                      className="bottomLine w-full text-white"
                       onClick={() => setIsOpen(false)}
                     >
                       Sobre Mim
                     </Link>
                   </motion.div>
+
                   <motion.div
-                    transition={{duration: 1.3}}
-                    variants={itemAnimation}
-                    className="w-full rounded-lg bg-accent/40 dark:bg-darkAccent/40 p-3"
+                    {...fadeInDown}
+                    transition={{ ...fadeInDown.transition, duration: 0.8, delay: 0.8 }}
+                    className="w-full rounded-lg bg-Xbox-Purple/50 p-3"
                   >
                     <Link
-                      to="projects"
-                      className="bottomLine w-full"
+                      to="/projects"
+                      className="bottomLine w-full text-white"
                       onClick={() => setIsOpen(false)}
                     >
                       Projetos
                     </Link>
                   </motion.div>
+
                   <motion.div
-                    variants={itemAnimation}
-                    className="w-full rounded-lg bg-accent/40 dark:bg-darkAccent/40 p-3"
+                    {...fadeInDown}
+                    transition={{ ...fadeInDown.transition, duration: 0.8, delay: 0.9 }}
+                    className="w-full rounded-lg bg-Xbox-Purple/50 p-3"
                   >
                     <Link
-                      to="career"
-                      className="bottomLine w-full"
-                      onClick={() => setIsOpen(false)}
-                    >
-                      Carreira
-                    </Link>
-                  </motion.div>
-                  <motion.div
-                    variants={itemAnimation}
-                    className="w-full rounded-lg bg-accent/40 dark:bg-darkAccent/40 p-3"
-                  >
-                    <Link
-                      to="contact"
-                      className="bottomLine w-full"
+                      to="/contact"
+                      className="bottomLine w-full text-white"
                       onClick={() => setIsOpen(false)}
                     >
                       Contato
                     </Link>
                   </motion.div>
-                </motion.div>
-              </Dialog.Panel>
+
+                  <motion.a
+                  {...fadeInDown}
+                  transition={{ ...fadeInDown.transition, duration: 0.8, delay: 1 }}
+                    href={"../../assets/Currículo Josué.docx.pdf"}
+                    download
+                    target="_blank"
+                    className="mt-8 flex items-center gap-3 rounded-xl bg-Xbox-Purple py-4 px-6 text-white"
+                  >
+                    Baixar Currículo
+                    <IoCloudDownloadOutline />
+                  </motion.a>
             </div>
-          </div>
-        </Dialog>
-      )}
-    </AnimatePresence>
-  );
+
+          </DialogPanel>
+
+        </motion.div>
+
+
+      </Dialog>
+    </>
+  )
 };
