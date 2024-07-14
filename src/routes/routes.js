@@ -8,7 +8,7 @@ function AppRoute() {
   return (
     <AnimatePresence>
       <Routes location={location} key={location.pathname}>
-        <Route path="/Dashboardr" element={<Dashboadr />} />
+        <Route path="/" element={<Dashboadr />} />
       </Routes>
     </AnimatePresence>
   )

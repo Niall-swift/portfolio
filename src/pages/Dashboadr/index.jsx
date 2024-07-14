@@ -5,11 +5,13 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { transition, fadeInDown, fadeInUp} from "../../utils/Animations";
 import picture from '../../assets/pictures/48032843-FBDB-480C-832C-B6FEDAE2B589.1b5a1325a9d94e99553e.jpg'
+import { Header } from "../../components/Header";
 
 export function Dashboadr() {
   return (
     <>
       <PageTransition />
+      <Header/>
 
       <section className="container relative z-20 mx-auto w-full h-full overflow-hidden sm:mt-4">
         <motion.div
@@ -56,7 +58,7 @@ export function Dashboadr() {
             </div>
           </div>
 
-          <div className="mx-auto w-[90%] shadow-2xl shadow-Xbox-roxo/20 overflow-hidden rounded-full">
+          <div className="mx-auto w-[90%] shadow-2xl shadow-Xbox-roxo/50 overflow-hidden rounded-full">
             <motion.img
               whileHover={{ scale: 1.1 }}
               initial={{ scale: 1.15 }}
