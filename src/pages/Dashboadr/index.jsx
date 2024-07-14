@@ -4,7 +4,7 @@ import { BsInstagram, BsArrowUpRight, BsGithub } from "react-icons/bs";
 import { FaLinkedinIn } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { transition, fadeInDown, fadeInUp} from "../../utils/Animations";
-import picture from '../../assets/pictures/48032843-FBDB-480C-832C-B6FEDAE2B589.1b5a1325a9d94e99553e.jpg'
+import picture from '../../assets/picture.jpg'
 import { Header } from "../../components/Header";
 
 export function Dashboadr() {
