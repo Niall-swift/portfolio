@@ -10,7 +10,7 @@ export const PageTransition = () => (
       }}
       exit={{ scaleY: 1 }}
       transition={{ ...transition, duration: 1}}
-      className="fixed top-0 left-0 w-full h-screen origin-bottom bg-Xbox-roxo z-50"
+      className="fixed top-0 left-0 w-full h-screen origin-top bg-Xbox-roxo z-50"
     >
     </motion.div>
 
@@ -21,7 +21,7 @@ export const PageTransition = () => (
       }}
       exit={{ scaleY : 0 }}
       transition={{ ...transition, duration: 1}}
-      className="fixed top-0 left-0 w-full h-screen origin-top bg-Xbox-roxo z-50 "
+      className="fixed top-0 left-0 w-full h-screen origin-bottom  bg-Xbox-roxo z-50 "
     >
     </motion.div>
 

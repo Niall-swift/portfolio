@@ -13,7 +13,7 @@ export function Dashboadr() {
       <PageTransition />
       <Header/>
 
-      <section className="container relative z-20 mx-auto w-full h-full overflow-hidden sm:mt-4">
+      <section className="container relative z-20 mx-auto w-full h-full overflow-hidden sm:mt-1">
         <motion.div
           {...fadeInUp}
           transition={{ ...fadeInUp.transition, delay: 0.2 }}
@@ -58,7 +58,7 @@ export function Dashboadr() {
             </div>
           </div>
 
-          <div className="mx-auto w-[90%] shadow-2xl shadow-Xbox-roxo/50 overflow-hidden rounded-full">
+          <div className="mx-auto w-[90%] h-[90%] shadow-2xl shadow-Xbox-roxo/50 overflow-hidden rounded-full">
             <motion.img
               whileHover={{ scale: 1.1 }}
               initial={{ scale: 1.15 }}
@@ -75,10 +75,10 @@ export function Dashboadr() {
 
             <Link
               to="/projects"
-              className="absolute -bottom-4 left-6 hidden h-32 w-32 items-center justify-center rounded-full border border-Xbox-Sinza sm:flex lg:left-14 lg:h-40 lg:w-40 xl:bottom-0  hover:scale-105 transition duration-300"
+              className="absolute -bottom-4 left-6 hidden h-32 w-32 items-center justify-center rounded-full border border-Xbox-Sinza sm:flex lg:left-14 lg:h-40 lg:w-40 xl:bottom-0 hover:scale-105	hover:animate-pulse transition duration-30"
             >
-              <div className="absolute top-2 right-1 h-6 w-6 rounded-full group-hover:animate-pulse transition bg-Xbox-Purple lg:top-1 lg:right-5"></div>
-              <p className="w-20">Ver meus Projetos</p>
+              <div className="absolute top-2 right-1 h-6 w-6 rounded-full bg-Xbox-Purple lg:top-1 lg:right-5"></div>
+              <p className="w-20">Ver meus <p className="text-Xbox-Purple">Projetos</p></p>
               <BsArrowUpRight className="h-5 w-5" />
             </Link>
 

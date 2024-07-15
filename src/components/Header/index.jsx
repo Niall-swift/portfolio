@@ -46,7 +46,7 @@ export const Header = () => {
             className="bottomLine"
             onClick={() => window.scrollTo(0, 0)}
           >
-            Carreira
+            Studos
           </Link>
           <Link
             to="contact"
