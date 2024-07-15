@@ -9,19 +9,6 @@ import cv from '../../assets/Currículo-Josué.pdf'
 
 export const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [downloadUrl, setDownloadUrl] = useState('');
-
-  const handleDownload = async () => {
-    try {
-      // Substitua 'path/to/your/file.pdf' pelo caminho real do seu arquivo PDF
-      const response = await fetch('../../assets/Currículo-Josué.pdf');
-      const blob = await response.blob();
-      const url = URL.createObjectURL(blob);
-      setDownloadUrl(url);
-    } catch (error) {
-      console.error("Erro ao baixar o arquivo:", error);
-    }
-  };
 
   return (
     <motion.div
