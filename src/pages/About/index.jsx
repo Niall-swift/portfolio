@@ -27,10 +27,13 @@ export const About = () => {
               Eu me chamo Josué Ramos. Tenho 23 anos e atualmente estou
               em formação pelo curso livre de Desenvolvedor Full Stack Python na
               EBAC - Escola Britânica de Artes Criativas e Tecnologia.
-              minha expertise reside no desenvolvimento de interfaces web com JavaScript e React. Agora, estou em busca de aprimorar minhas habilidades para o back-end, aprendendo TypeScript, Node.js e Express. Com essa combinação, pretendo me tornar um desenvolvedor full-stack completo, capaz de criar aplicações web robustas e escaláveis.
+              minha expertise reside no desenvolvimento de interfaces web com JavaScript e React. Agora, 
+              estou em busca de aprimorar minhas habilidades para o back-end, aprendendo TypeScript, 
+              Node.js e Express. Com essa combinação, pretendo me tornar um desenvolvedor full-stack completo, 
+              capaz de criar aplicações web robustas e escaláveis.
             </p>
 
-            <div className="mx-auto w-[90%] border border-Xbox-Purple/10"></div>
+            <div className="mx-auto w-[100%] border border-Xbox-Purple/10"></div>
 
             <div className="my-4 flex w-full flex-col gap-4 rounded-xl bg-Xbox-Purple/50 py-4 px-3 text-center font-Wulkan text-xl font-semibold sm:m-6 sm:mx-auto sm:w-fit sm:flex-row sm:gap-8 sm:p-6 sm:text-3xl sm:font-normal">
               <h2 className="text-white">
