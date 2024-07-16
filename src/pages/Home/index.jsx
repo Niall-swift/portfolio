@@ -7,10 +7,9 @@ import { transition, fadeInDown, fadeInUp} from "../../utils/Animations";
 import picture from '../../assets/picture.jpg'
 import { Header } from "../../components/Header";
 
-export function Dashboadr() {
+export function Home() {
   return (
     <>
-      <PageTransition />
       <Header/>
 
       <section className="container relative z-20 mx-auto w-full h-full overflow-hidden sm:mt-1">
@@ -88,23 +87,6 @@ export function Dashboadr() {
       </section>
 
       {/* Efeitos em volta do site */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1, transition: { duration: 0.8 } }}
-        exit={{ opacity: 0, transition: { duration: 0.8 } }}
-        className="absolute bottom-5 left-20 h-96 w-72 rounded-full bg-gradient-to-br from-accent to-transparent p-px sm:bottom-0 sm:rounded-t-full"
-      >
-        <div className="h-full w-full rounded-t-full bg-background"></div>
-      </motion.div>
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1, transition: { duration: 0.8 } }}
-        exit={{ opacity: 0, transition: { duration: 0.8 } }}
-        className="absolute top-0 -right-0 h-64 w-56 rounded-b-full bg-gradient-to-tl
-        from-accent to-transparent p-px "
-      >
-        <div className="h-full w-full rounded-b-full bg-background"></div>
-      </motion.div>
     </>
   );
 }

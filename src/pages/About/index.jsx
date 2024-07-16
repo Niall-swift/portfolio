@@ -10,7 +10,6 @@ import { Header } from "../../components/Header";
 export const About = () => {
   return (
     <>
-    <PageTransition/>
       <Header />
       <section className="container mx-auto flex min-h-[80vh] w-full flex-col gap-12 p-4 sm:p-6 lg:flex-row">
         <motion.div>
@@ -116,10 +115,6 @@ export const About = () => {
             <p className="mt-4 leading-relaxed text-white/90"></p>
           </div>
         </motion.div>
-
-        <div className="dotsGrid absolute left-0 top-0 z-10 hidden h-12 w-12 lg:block 2xl:h-24 2xl:w-32"></div>
-        <div className="dotsGrid absolute bottom-0 z-20 hidden h-16 w-48 2xl:block 2xl:w-64"></div>
-        <div className="dotsGrid absolute right-0 top-0 z-20 hidden h-16 w-24 lg:block 2xl:w-44"></div>
       </section>
     </>
   );

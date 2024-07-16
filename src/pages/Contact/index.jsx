@@ -24,7 +24,6 @@ export const Contact = () => {
 
   return (
     <>
-    <PageTransition/>
       <Header/>
       <section className="flex h-[80vh] w-full flex-col items-center justify-center p-4 sm:h-[90vh] sm:p-6 ">
         <div className="max-w-5xl overflow-hidden text-center">
