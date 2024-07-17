@@ -10,6 +10,7 @@ import { Header } from "../../components/Header";
 export function Home() {
   return (
     <>
+    <PageTransition/>
       <Header/>
 
       <section className="container relative z-20 mx-auto w-full h-full overflow-hidden sm:mt-1">

@@ -12,6 +12,7 @@ export default function Projects () {
 
   return (
     <>
+    <PageTransition/>
       <Header/>
       <motion.section className="flex w-full flex-col items-center">
         <h1 className="mb-16 mt-6 font-Wulkan text-4xl sm:text-5xl">

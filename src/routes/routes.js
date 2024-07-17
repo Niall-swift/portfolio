@@ -8,10 +8,9 @@ import { AnimatePresence } from "framer-motion";
 
 
 function AppRoute() {
-  const location = useLocation()
   return (
     <AnimatePresence>
-      <Routes location={location} key={location.pathname}>
+      <Routes>
         <Route path="/" element={<Home/>} />
         <Route path="/about" element={<About/>} />
         <Route path="/contact" element={<Contact/>} />

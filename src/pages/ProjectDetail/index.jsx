@@ -24,6 +24,7 @@ export const ProjectDetail = ({scrolled}) => {
 
   return (
     <>
+    <PageTransition/>
             <section className="relative mx-auto mb-16">
               <motion.div className="container mx-auto overflow-hidden p-6 sm:mb-14">
                 <motion.h4
@@ -33,7 +34,7 @@ export const ProjectDetail = ({scrolled}) => {
                   transition={{ ...transition, delay: 2 }}
                   className="text-sm text-darkerAccent"
                 >
-                  {filteredProject?.stacks}
+                  {filteredProject?.stacks.split(";").join(" · ")}
                 </motion.h4>
 
                 <motion.div
@@ -89,7 +90,7 @@ export const ProjectDetail = ({scrolled}) => {
                 </AnimatePresence>
               </motion.div>
               <motion.div
-                initial={{ width: 1100, height: 600, y: "-30%" }}
+                initial={{ width: 1100, height: 600, y: "-5%" }}
                 animate={{
                   y: 0,
                   x: 0,
@@ -133,13 +134,13 @@ export const ProjectDetail = ({scrolled}) => {
                     <p>
                       Projeto feito em:
                       <span className="ml-1 font-medium text-accent">
-                        {filteredProject?.developedIn}
+                        {filteredProject?.date}
                       </span>
                     </p>
                     <p className="">
                       Stacks utilizadas:
                       <span className="ml-1 font-medium text-accent">
-                        {filteredProject?.stacks}
+                        {filteredProject?.stacks.split(";").join(" - ")}
                       </span>
                     </p>
                   </div>
@@ -150,12 +151,12 @@ export const ProjectDetail = ({scrolled}) => {
                 </h2>
                 <div className="mx-auto w-full space-y-8 lg:w-3/4">
                   <img
-                    src={filteredProject?.image}
+                    src={filteredProject?.image1}
                     className="w-full rounded-3xl"
                     alt=""
                   />
                   <img
-                    src={filteredProject?.image}
+                    src={filteredProject?.image2}
                     className="w-full rounded-3xl"
                     alt=""
                   />

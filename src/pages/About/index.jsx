@@ -10,6 +10,7 @@ import { Header } from "../../components/Header";
 export const About = () => {
   return (
     <>
+    <PageTransition/>
       <Header />
       <section className="container mx-auto flex min-h-[80vh] w-full flex-col gap-12 p-4 sm:p-6 lg:flex-row">
         <motion.div>
