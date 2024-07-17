@@ -38,7 +38,7 @@ export const About = () => {
             <div className="my-4 flex w-full flex-col gap-4 rounded-xl bg-Xbox-Purple/50 py-4 px-3 text-center font-Wulkan text-xl font-semibold sm:m-6 sm:mx-auto sm:w-fit sm:flex-row sm:gap-8 sm:p-6 sm:text-3xl sm:font-normal">
               <h2 className="text-white">
                 <span className="mr-2 text-2xl font-semibold text-Xbox-roxo">
-                  5+
+                  3+
                 </span>
                 Projetos feitos
               </h2>
