@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { fadeInDown, fadeInLeft, transition } from "../../utils/Animations";
 import { StaggerContainer, itemAnimation } from "../../utils/Animations";
-import Picture from "../../assets/picture.jpg";
+import Picture from "../../assets/pictures/picture.jpg";
 import { PageTransition } from "../../components/PageTransition";
 import { HiOutlineCodeBracket, HiOutlineScale } from "react-icons/hi2";
 import { LuSendToBack } from "react-icons/lu";

@@ -6,8 +6,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'Xbox-roxo': '#7E30E1',
-        'Xbox-Purple': '#9400FF',
+        'Xbox-roxo': '#0D109D',
+        'Xbox-Purple': '#0D109D',
         'Xbox-Sinza': '#686D76',
         'Xbox-SbBlack': '#1A2130',
       },

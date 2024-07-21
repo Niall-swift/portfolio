@@ -4,7 +4,7 @@ import { BsInstagram, BsArrowUpRight, BsGithub } from "react-icons/bs";
 import { FaLinkedinIn } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { transition, fadeInDown, fadeInUp} from "../../utils/Animations";
-import picture from '../../assets/picture.jpg'
+import picture from '../../assets/pictures/picture.jpg'
 import { Header } from "../../components/Header";
 
 export function Home() {
@@ -13,7 +13,7 @@ export function Home() {
     <PageTransition/>
       <Header/>
 
-      <section className="container relative z-20 mx-auto w-full h-full overflow-hidden sm:mt-1">
+      <section className="container relative z-20 mx-auto w-full h-[100%] overflow-hidden sm:mt-1">
         <motion.div
           {...fadeInUp}
           transition={{ ...fadeInUp.transition, delay: 0.2 }}
@@ -58,7 +58,7 @@ export function Home() {
             </div>
           </div>
 
-          <div className="mx-auto w-[90%] h-[90%] shadow-2xl shadow-Xbox-roxo/50 overflow-hidden rounded-full">
+          <div className="mx-auto w-[90%] h-[100%] shadow-2xl shadow-Xbox-roxo/50 overflow-hidden rounded-full">
             <motion.img
               whileHover={{ scale: 1.1 }}
               initial={{ scale: 1.15 }}

@@ -17,7 +17,7 @@ export const ProjectDetail = ({scrolled}) => {
   const { id } = useParams();
   const {projects} = useContext(ContextG)
 
-  const transitionImage = { duration: 2.4, ease: [0.6, 0.01, -0.05, 0.91] };
+  const transitionImage = { duration: 1.4, ease: [0.6, 0.01, -0.05, 0.91] };
 
   const filteredProject = projects?.find((project) => project.id === id);
   const fragmentedTitle = filteredProject?.name.split("");
@@ -31,7 +31,7 @@ export const ProjectDetail = ({scrolled}) => {
                   initial={{ y: 50, opacity: 0 }}
                   animate={{ y: 0, opacity: 1 }}
                   exit={{ y: 50, opacity: 0 }}
-                  transition={{ ...transition, delay: 2 }}
+                  transition={{ ...transition, delay: 1 }}
                   className="text-sm text-darkerAccent"
                 >
                   {filteredProject?.stacks.split(";").join(" · ")}
@@ -59,7 +59,7 @@ export const ProjectDetail = ({scrolled}) => {
                   initial={{ y: 100, opacity: 0 }}
                   animate={{ y: 0, opacity: 1 }}
                   exit={{ y: 100, opacity: 0 }}
-                  transition={{ ...transition, delay: 2.2 }}
+                  transition={{ ...transition, delay: 1.2 }}
                 >
                   <a
                     target="_blank"
@@ -90,7 +90,7 @@ export const ProjectDetail = ({scrolled}) => {
                 </AnimatePresence>
               </motion.div>
               <motion.div
-                initial={{ width: 1100, height: 600, y: "-5%" }}
+                initial={{ width: 1000, height: 700, y: "-10%" }}
                 animate={{
                   y: 0,
                   x: 0,
