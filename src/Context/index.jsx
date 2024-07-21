@@ -2,6 +2,9 @@ import { createContext, useState } from "react";
 import dayfoodImg from '../assets/ProjectsImg/dayfood-img.png'
 import dayfoodImg1 from '../assets/ProjectsImg/dayfood-img-1.png'
 import dayfoodImg2 from '../assets/ProjectsImg/dayfood-img-2.png'
+import dayfoodmobileImg from '../assets/ProjectsImg/dayfood-mobile-img.png'
+import dayfoodmobileImg1 from '../assets/ProjectsImg/dayfood-mobile-img2.png'
+import dayfoodmobileImg2 from '../assets/ProjectsImg/dayfood-mobile-img-3.png'
 import expofilmeimg from '../assets/ProjectsImg/expo-filme-img.png'
 import expofilmeimg1 from '../assets/ProjectsImg/expo-filme-img-1.png'
 import expofilmeimg2 from '../assets/ProjectsImg/expo-filme-img-2.png'
@@ -30,6 +33,18 @@ function GContext({ children }) {
   {
     id:"2",
     git: "",
+    sit: "https://play.google.com/apps/test/com.niallswift.dayfoodmobile/14",
+    image: `${ dayfoodmobileImg}`,
+    image1: `${dayfoodmobileImg1}`,
+    image2: `${ dayfoodmobileImg2}`,
+    name:"Dayfood-Garçom",
+    date:"15/06/24",
+    description:"Imagine um restaurante onde os pedidos são feitos em um piscar de olhos e a cozinha recebe tudo com precisão, Essa é a realidade do Dayfood Garçom, um aplicativo que transforma o atendimento ao cliente!!",
+    stacks:"TypeScript;ReactNative;NativeBase;Axios",
+  },
+  {
+    id:"3",
+    git: "",
     sit: "",
     image: `${expofilmeimg}`,
     image1: `${expofilmeimg1}`,
@@ -40,7 +55,7 @@ function GContext({ children }) {
     stacks:"TypeScript;ReactNative;NativeBase;Axios;NativeSwiper",
   },
   {
-    id:"3",
+    id:"4",
     git: "",
     sit: "https://play.google.com/store/apps/details?id=com.niallswift.avlTelecom&pcampaignid=web_share",
     image: `${avlimg1}`,
@@ -52,7 +67,7 @@ function GContext({ children }) {
     stacks:"TypeScript;ReactNative;NativeBase;Axios;NativeSwiper;ApiIXC;ApiEfyPay",
   },
   {
-    id:"4",
+    id:"5",
     git: "",
     sit: "",
     image: `${maisembreveimg}`,
