@@ -3,7 +3,7 @@ import { Dialog, DialogPanel, DialogTitle } from "@headlessui/react";
 import { motion, AnimatePresence } from "framer-motion";
 import { fadeIn, fadeInDown } from "../../utils/Animations";
 import { IoCloudDownloadOutline } from "react-icons/io5";
-import cv from "../../assets/Currículo-Josué.pdf";
+import cv from "../../assets/Currículo josué ramos dev.pdf";
 
 export const MenuModal = ({ isOpen, setIsOpen }) => {
   return (

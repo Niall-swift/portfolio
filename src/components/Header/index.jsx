@@ -5,7 +5,7 @@ import { fadeInDown } from "../../utils/Animations";
 import { MenuModal } from "../MenuModal";
 import { HiOutlineMenuAlt4 } from "react-icons/hi";
 import { IoCloudDownloadOutline } from "react-icons/io5";
-import cv from "../../assets/Currículo-Josué.pdf";
+import cv from "../../assets/Currículo josué ramos dev.pdf";
 
 export const Header = () => {
   const [isOpen, setIsOpen] = useState(false);

@@ -24,7 +24,7 @@ export const About = () => {
             </h1>
 
             <p className="max-w-sm py-8 text-sm sm:max-w-2xl sm:text-base">
-              Eu me chamo Josué Ramos. Tenho 23 anos e atualmente estou
+              Eu me chamo Josué Ramos. Tenho 24 anos e atualmente estou
               em formação pelo curso livre de Desenvolvedor Full Stack Python na
               EBAC - Escola Britânica de Artes Criativas e Tecnologia.
               minha expertise reside no desenvolvimento de interfaces web com JavaScript e React. Agora, 
@@ -38,13 +38,13 @@ export const About = () => {
             <div className="my-4 flex w-full flex-col gap-4 rounded-xl bg-Xbox-Purple/50 py-4 px-3 text-center font-Wulkan text-xl font-semibold sm:m-6 sm:mx-auto sm:w-fit sm:flex-row sm:gap-8 sm:p-6 sm:text-3xl sm:font-normal">
               <h2 className="text-white">
                 <span className="mr-2 text-2xl font-semibold text-Xbox-roxo">
-                  3+
+                  4+
                 </span>
                 Projetos feitos
               </h2>
               <h2 className="text-white">
                 <span className="mr-2 text-2xl font-semibold text-Xbox-roxo">
-                  1
+                  1,5
                 </span>
                 Ano de experiência
               </h2>
