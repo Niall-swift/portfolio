@@ -77,7 +77,7 @@ export const Contact = () => {
         >
           <motion.a
             variants={itemAnimation}
-            href="https://api.whatsapp.com/send?phone=5521980280673"
+            href="https://api.whatsapp.com/send?phone=5522988247057"
             className="transition-colors duration-300 hover:text-accent"
             target="_blank"
           >
